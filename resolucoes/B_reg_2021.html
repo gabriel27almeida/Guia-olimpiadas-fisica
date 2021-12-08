@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    <title>Guia para olimpíadas de física</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body>
+    <h3>Escalão B - Fase regional 2021</h3>
+
+    <h3>Resolução</h3>
+
+    <p>1. Como o peso é uma força conservativa e a tensão atua sempre perpendicularmente 
+    à velocidade do objeto, a energia mecânica conserva-se. Assim, conseguimos calcular a sua velocidade 
+    quando a barra fica horizontal: $v^2=2\times g \times 0.8 L$.</p>
+
+    <center><img src="ex1.png" width="300"></center>
+
+    <p>Aplicando agora a 2ª lei de Newton na direção radial, temos que $m a_{\text{radial}} = -T$. Como o objeto descreve uma trajetória circular de raio $L$, 
+      temos que $a_{\text{radial}}=-v^2/L$ e, portanto, $T=1.6 m g$.</p>
+
+    <p>2. Quando a bola sai com velocidade $v$ de um choque, o próximo choque ocorrerá um tempo $\Delta t$ depois, dado por:
+    $v - g \Delta t/2 =0 \iff \Delta t =2v/g$.
+    </p>
+
+    <p>Assim, se num ressalto a bolinha sair com velocidade $v_i$, este ressalto dura $2v_i/g$. No seguinte ressalto, sai com 
+    velocidade $\beta v_i$, pelo que este salto irá durar $2\beta v_i/g$. Deste modo, a taxa de variação do tempo entre ressaltos é
+    $$\frac{2\beta v_i/g - 2 v_i/g}{2v_i/g} = \beta -1,$$ que é constante! Logo, o gráfico correto é uma reta com declive negativo ($\beta-1$).
+    </p>
+
+    <p>Vejamos o que acontece se em $t=0$ a bolinha é disparada do chão com velocidade $v_0$. Este primeiro ressalto demora $2v_0/g$ (doravante chamado $T_0$). 
+    Passado um tempo $2 v_0 /g$, a bolinha embate no chão e ressalta com velocidade $\beta v_0$. Assim, este ressalto irá demorar $2 \beta v_0 / g = \beta T_0$ e por aí em diante.</p>
+
+    <center><img src="ex2.png" width="450"></center>
+
+    <p>3. Seja $h$ a profundidade do poço, o tempo que a pedra demora a cair é $\sqrt{2h/g}$. O tempo que o som demora a propagar-se
+    até à superfície é $h/c$, onde $c$ é a velocidade do som no ar. Assim, o intervalo de tempo $t$ que medimos está relacionado com a altura $h$ da seguinte forma
+    $$
+    t=\sqrt{\frac{2h}{g}} + \frac{h}{c}.
+    $$
+    </p>
+
+    <p>
+    Usando a aproximação, obtemos uma profundidade aproximada $h'$ dada por 
+    $$
+    h'=\frac{1}{2} g t^2.
+    $$
+
+    Queremos agora descobrir a altura para o qual a aproximação tem um erro de 5%, ou seja, queremos resolver a equação
+    $$
+    \frac{h'-h}{h}=0.05.
+    $$
+
+    Podemos agora testar as opções do problema (usar $h$ para calcular $t$, calculando depois $h'$) e verificar que a solução da equação é $h=14$ m. 
+    Alternativamente, após alguma manipulação algébrica, temos a seguinte equação de segundo grau em $\sqrt{h}$:
+    $$
+    \frac{g}{2c^2} (h^{1/2})^2 + \frac{\sqrt{2g}}{c} h^{1/2} - 0.05 = 0 \iff h = 14 \text{ m.}
+    $$
+  </p>
+
+  <p>4. O tempo, $T$, que a barra demora a voltar à posição inicial é dado por $v_y - gT/2 = 0$, ou seja, $T=2v_y / g$. Este tempo corresponde também ao período
+    de rotação da barra, já que é o tempo que a barra demora a completar uma rotação. Assim a velocidade angular da barra é 
+    $$
+    \omega = \frac{2\pi}{T} = \frac{\pi g}{v_y}.
+    $$
+
+    A velocidade da base da barra é a soma da velocidade do centro de massa com a velocidade do ponto <i>em relação ao centro de massa</i> ($\vec{v^*}$ na figura). 
+    Assim, a velocidade horizontal da base de barra no início do movimento é simplesmente a sua velocidade em relação ao centro de massa, 
+    pois a velocidade do centro de massa é vertical. Esta velocidade é dada por 
+    $$
+    \omega \frac{L}{2} = \frac{\pi g L}{2 v_y},
+    $$
+    já que no referencial do centro de massa, a barra está apenas em rotação.
+  </p>
+
+  <center><img src="ex4.png" width="500"></center>
+
+  <p>5. Desenhando um diagrama de forças (notar que a força de atrito se opõe ao movimento) e escrevendo a 2ª lei de Newton no eixo paralelo à rampa, temos
+    $$
+    m a_s = mg \sin{\theta}  + F_a \iff a_s = g \sin{\theta} + \frac{F_a}{m}.
+    $$
+
+    <center><img src="ex5.png" width="650"></center>
+
+    Com a aceleração, conseguimos agora calcular o tempo de subida:
+    $$
+    v_0 - a_s t_s = 0 \iff t_s = \frac{v_0}{a_s}.
+    $$
+
+    Também podemos calcular a distância percorrida, algo que será útil para mais tarde determinar o tempo de descida. Esta distância é
+    $$
+    d=v_0 t_s - \frac{1}{2} a_s t_s ^2 = \frac{v_0^2}{2 a_s}.
+    $$
+
+    Para o movimento descendente, as leis de Newton dão-nos
+    $$
+    m a_d = mg \sin{\theta} - F_a \iff a_d = g \sin{\theta} - \frac{F_a}{m}.
+    $$
+
+    Podemos agora relacionar o tempo de descida com o de subida, uma vez que sabemos que a distância percorrida será $d$:
+    $$
+    d=\frac{1}{2} a_d t_d^2 \iff \frac{v_0^2}{2 a_s} = \frac{1}{2} a_d t_d^2 \iff \frac{(t_s a_s)^2}{2 a_s} = \frac{1}{2} a_d t_d^2 \iff t_d = \sqrt{\frac{a_s}{a_d}} t_s.
+    $$
+
+    Usando $\sin{\theta} = 0.6 L/L = 0.6$ e os valores do enunciado, obtemos $t_d = \sqrt{5} t_s$.
+  </p>
+
+  <p>6. Quando é lançado, o objeto tem velocidade positiva. Tanto a força gravítica como a resistência do ar têm sentido para baixo, logo a velocidade do 
+    objeto vai diminuindo até ser nula. 
+
+    Neste momento, a resistência do ar é zero, pelo que o objeto cai com a aceleração da gravidade. À medida que vai ganhando velocidade, a força de resistência
+    do ar vai aumentando, fazendo com que a aceleração seja cada vez menor. A velocidade aproxima-se assintoticamente de uma velocidade terminal.
+
+    Deste modo, o gráfico correto é o D.
+  </p>
+
+  <p>7. Balançando as forças que atuam corpo A na direção paralela ao plano, temos que $T= mg \sin{\theta}$. Balançando as forças no corpo B, temos
+    $$
+    T+I = mg \iff I = mg - mg \sin{\theta} = mg (1 - \sin{\theta}).
+    $$
+    Como $\theta = 30^{\circ}$, temos que a impulsão é $mg/2$.
+  </p>
+
+  <center><img src="ex7.png" width="400"></center>
+
+  <p>8. Após cair uma distância h com aceleração constante $a$, o corpo tem velocidade $v = \sqrt{2 a h}$. Como esta é também a velocidade na periferia 
+    da roldana, temos que $\omega R = v$ e, portanto, $\omega = \sqrt{2ah}/R = 1 \text{ rad/s}$.
+  </p>
+
+  <p>9. Em primeiro lugar, devemos notar que a variação de entalpia mássica de vaporização da água é muito maior do que a do gelo. Por isso, devemos primeiro
+    confirmar se a transferência de energia do vapor de água para o gelo é suficiente para que todo o vapor se condense.
+
+    Sendo $m$ a massa do gelo e do vapor, a energia necessária para a fusão do gelo e elevar a temperatura de água a 0ºC 
+    até 100ºC é 
+    $$
+    m \times 3.35\times 10^5 \text{J/kg} + m \times 4190 \text{J/kg} \times 100 = m\times 7.54 \times 10^5 \text{J/kg}.
+    $$ 
+
+    Como a energia para condensar totalmente o vapor de água é $m\times 2.26\times 10 ^6 \text{J/kg} > m\times 7.54 \times 10^5 \text{J/kg}$, a temperatura final da mistura é
+    $100^{\circ}C$. Ou seja, o vapor de água (sem nunca condensar totalmente) vai transferindo energia sob a forma de calor ao gelo, fazendo com que este funda completamente e com que a água líquida
+    resultante aumente a sua temperatura até $100^{\circ}C$.
+  </p>
+
+  <p>10. A variação de fluxo magnético irá causar uma força eletromotriz induzida $\varepsilon=-\frac{\Delta \Phi}{\Delta t}$ no circuito, que faz com que surja uma corrente elétrica, $I=\varepsilon/R$. 
+  A corrente elétrica será nula quando a força eletromotriz for nula, ou seja, quando a taxa de variação temporal do fluxo magnético for zero. O que isto significa é que decorrido um tempo pequeno 
+  $\Delta t$, o fluxo magnético praticamente não se altera: 
+  $$
+  \frac{\Phi(t+\Delta t) - \Phi(t)}{\Delta t} \approx 0.
+  $$
+
+  O fluxo magnético é dado simplesmente pelo produto da área com o campo magnético, porque o campo é perpendicular ao plano do circuito. Logo, no instante $t$ temos
+  $$
+  \Phi(t)=L_{AB} \cdot L(t) \cdot kt,
+  $$
+  onde $k=0.05 \text{T/s}$. Após um intervalo $\Delta t$, a distância $L$ diminui $v \Delta t$, por isso temos
+  $$
+  \Phi(t+\Delta t) = L_{AB} \cdot (L(t) - v \Delta t) \cdot k (t+\Delta t).
+  $$
+
+  Assim, a taxa de variação de fluxo magnético é
+  $$
+  \frac{\Phi(t+\Delta t) - \Phi(t)}{\Delta t} = k L_{AB} \left[ L(t) - vt - v\Delta t \right].
+  $$
+
+  Como o intervalo de tempo $\Delta t$ é muito pequeno, o termo $v \Delta t$ é desprezável. Além disso, como $L(t)=L_0 - vt$, podemos reescrever a equação do seguinte modo:
+  $$
+  \frac{\Phi(t+\Delta t) - \Phi(t)}{\Delta t} = k L_{AB} \left[ 2 L(t) - L_0 \right].
+  $$
+
+  Logo, a taxa de variação de fluxo é zero quando $L(t)=L_0/2$. Assim, a distância para a qual a corrente no circuito é nula apenas depende da distância inicial, 
+  é independente da velocidade $v$, da resistência $R$ e do comprimento $AB$.
+  </p>
+  <center><img src="ex10.png" width="400"></center>
+
+  <p>Nota: Este exercício pode ser feito com recurso a derivadas, pois o que queremos calcular é na verdade a derivada temporal do fluxo magnético, ou seja, $\frac{d}{dt}\left[L_{AB}\cdot L(t)\cdot B(t)\right]$.</p>
+
+  <p>11. Aplicando a lei de Snell-Descartes entre o meio 0 e 1, temos $n_0 \sin{\theta_0} = n_1 \sin{\theta_1}$. Aplicando agora entre o meio 1 e 2, obtemos 
+    $n_1 \sin{\theta_1} = n_2 \sin{\theta_2}$ e por isso $n_0 \sin{\theta_0} = n_2 \sin{\theta_2}$. Podemos continuar a aplicar este raciocínio e concluir
+    que para qualquer placa $i\in \{1, 2, 3, \dots\}$, temos $n_0 \sin{\theta_0} = n_i \sin{\theta_i}$. 
+    
+    O raio de luz irá sendo refratado e ficando cada vez mais horizontal, até incidir numa placa com um ângulo superior ao crítico e ser refletido completamente.
+    
+    O ângulo crítico da fronteira entre as placa $i$ e $i+1$ é dado por $\sin{\theta_c}=\frac{n_i+1}{n_i}$. Queremos portanto descobrir a placa $i$ para a qual 
+    \begin{align*}
+    \theta_i > \theta_c &\Leftrightarrow  \sin{\theta_i} > \sin{\theta_c} \\ &\Leftrightarrow \frac{n_0 \sin{\theta_0}}{n_i} > \frac{n_{i+1}}{n_i}\\ &\Leftrightarrow  
+    n_0 \sin{\theta_0} > n_0 - 0.05 (i+1)\\ &\Leftrightarrow i > \frac{n_0 (1-\sin{\theta_0})}{0.05} - 1 = 4.3 \\ &\Leftrightarrow i \geq 5.
+    \end{align*}
+
+    Ou seja, na fronteira entre a placa 4 e 5 o raio de luz ainda não tem um ângulo superior ao crítico, por isso passa para a placa 5. No entanto, quando chega à 
+    fronteira com a placa 6, este já é totalmente refletido. Logo, o raio consegue atravessar 5 placas.
+  </p>
+
+  <p>12. O trabalho da força será a área debaixo do gráfico (caso $F_x$ seja negativo, contabilizamos como sendo "área negativa"). Deste modo, o trabalho será
+    $$
+    W = \frac{6\times 8}{2} \text{N m}- \frac{(12-8)\times 3}{2} \text{N m} = 18 \text{ J.}
+    $$
+</body>
+</html>
