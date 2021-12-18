@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <title>Guia para olimpíadas de física</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body>
+    <h3>Escalão B - Fase nacional 2021</h3>
+
+    <h3>Resolução</h3>
+
+    <p>1. (a) Como as forças dissipativas são desprezáveis, a energia mecânica do saltador mantém-se constante. Assim, se $h$ for a 
+        altura pedida, temos que
+        $$mgh = \frac{1}{2} m v_x ^2 \iff h = \frac{v_x^2}{2g} = 32 \text{ m.}$$
+    </p>
+
+    <p>1. (b) Considerando um referencial cartesiano com origem na posição de salto, podemos escrever a posição do saltador em função 
+        do tempo do seguinte modo:
+        $$
+        \begin{cases}
+            x (t) = v_x t \\
+            y(t) = -\frac{1}{2}g t^2 
+        \end{cases}
+        $$
+
+        A superfície do terreno é a reta de equação $ y= - \tan{(30 ^\circ)} x$ (este é o declive porque quando nos deslocamos 
+        um metro horizontalmente, descemos $1 \times \tan{30 ^\circ}$ m para baixo.)
+
+        Juntando as 3 condições, podemos então determinar o tempo de voo e a posição do saltador no momento de aterragem. Note-se que
+        o que estamos a fazer é intersetar a trajetória do saltador com a superfície, pelo que iremos também obter a solução $x=y=t=0$. 
+
+        $$
+        \begin{cases}
+            x = v_x t \\
+            y = -\frac{1}{2}g t^2 \\
+            y= - \tan{(30 ^\circ)} x
+        \end{cases} \Longrightarrow
+        \begin{cases}
+            y = -\frac{1}{2}g \left(\frac{x}{v_x}\right)^2 \\
+            y= - \tan{(30 ^\circ)} x
+        \end{cases} \Longrightarrow
+        - \tan{(30 ^\circ)} x = - \frac{g x^2}{2 v_x^2} \Longrightarrow
+        x = 0 \vee x = \frac{2 v_x ^2 \tan{(30^\circ)}}{g}.
+        $$
+
+        Assim, o saltador aterra na posição $x = \frac{2 v_x ^2 \tan{(30^\circ)}}{g} = 74$ m e $y= - \frac{2 v_x ^2 \tan^2{(30^\circ)}}{g} = -43$ m.
+    </p>
+
+    <p>1. (c) Usando a primeira equação nda alínea anterior, obtemos $t = \frac{x}{v_x} = 2.9 \text{ s.}$
+
+        A velocidade vertical é dada por $v_y = -gt$, logo na eminência de aterrar esta vale $v_y = - 9.8 * 2.9 = 28.42$ m/s.
+    </p>
+
+    <p>2. (a) Temos que $R_{BC} = 10\ \Omega$ e $R_{AC} = 1\ \Omega$. Seja $i$, $j$ e $k$ lados do triângulo. Se escolhermos para terminais 
+        as extremidades do lado $i$, a resistência da configuração será
+        $$
+        \frac{1}{R} = \frac{1}{R_i} + \frac{1}{R_j + R_k} \iff R = \frac{R_i(R_j + R_k)}{R_i + R_j + R_k}
+        $$
+
+        Dado que a soma no denominador é constante, para minimizar a resistência devemos minimizar o numerador e por isso escolher $i=AC$:
+        $$R=\frac{1\times (10+100)}{1+10+100} \ \Omega= 0.99\ \Omega$$
+    </p>
+
+    <p>2. (b) Se a resitência do circuito delta for $R$, a resitência interna $r$ e $\varepsilon$ a força eletromotriz da bateria,
+        a potência dissipada será 
+        $$
+        \varepsilon I = \frac{\varepsilon^2}{(R+r)}.
+        $$
+
+        Assim, a potência máxima dissipada ocorre para a resistência $R$ mínima ($0.99\ \Omega$), valendo portanto 13 W. 
+    </p>
+
+    <p>2. (c) A corrente fornecida pela bateria será $I=\frac{\varepsilon}{R+r}$. Por isso, a corrente máxima ocorre quando 
+        $R$ é mínimo, valendo 1.1 A.
+    </p>
+
+    <p>3. (a) Aplicando a lei de Snell-Descartes à interface água-sedimentos (1-2), temos
+        $$
+        n_1 \sin{\theta_1}  = n_2 \sin{\theta_2} \iff \frac{k}{v_1} \sin{\theta_1} = \frac{k}{v2} \sin{\theta_2} \iff 
+        \sin{\theta_1} = \frac{v_1}{v_2} \sin{\theta_2} \iff \sin{\theta_1} = 0.64.
+        $$
+
+        Com o ângulo entre a onda e a vertical ($\theta_1$) e a profundidade ($z_1$), podemos agora calcular a distância que a onda viajou
+        até aos sedimentos:
+        $$
+        \cos{\theta_1} = \frac{z_1}{d} \iff d = \frac{z_1}{\cos{\theta_1}} = \frac{z_1}{\sqrt{1-\sin^2{\theta_1}}} = 1.30 \text{ km.}
+        $$
+
+        Por fim, dividindo pela velocidade da onda, obtemos o tempo que esta demora a atingir os sedimentos, $t_1=0.87$ s.
+    </p>
+
+    <p>3. (b) Seja $t_2$ o tempo que a onda demora a propagar-se pelos sedimentos até encontrar o tesouro. O tempo entre a emissão 
+        e receção do sinal é $T= 2\times (t_1 +t_2)$, pelo que $t_2 = 1.63$ s.
+
+        Por outro lado, se $z_2$ for a profundidade do tesouro em relação à interface água-sedimentos, $z_2 / \cos{\theta_2}$ será a distância
+        que a onda percorre nos sedimentos e portanto 
+        $$
+        \frac{z_2}{\cos{\theta_2}} = v_2 t_2 \iff z_2 = v_2 t_2 \cos{\theta_2} = 1.89 \text{ km.}
+        $$
+
+        Assim, a profundidade do tesouro será $z_1 + z_2 = 2.9$ km.
+    </p>
+
+    <p>3. (c) A distância horizontal entre o barco e o tesouro é
+        $$
+        z_1 \tan{\theta_1} + z_2 \tan{\theta_2} = 3.1 \text{ km.}
+        $$
+    </p>
+
+
+</body>
