@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Guia para olimpíadas de física</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body>
+    <h3>Escalão B - Fase nacional 2021</h3>
+
+    <h3>Resolução</h3>
+
+    <p>1. (a) O cubo de gelo irá flutuar e deslocar um certo volume de água. Como o cubo está em equilíbrio, o seu peso e a 
+      impulsão têm a mesma intensidade. Logo, a massa de água deslocada (e que sai do recipiente) é igual à massa do cubo. 
+      Assim, a balança irá registar 200,0 g.
+    </p>
+
+    <p>1. (b) À medida que o gelo vai fundindo, a água em excesso irá sendo expulsa do recipiente e portanto, no final, 
+      o recipiente estará completamente cheio de água e a balança registará na mesma 200,0 g.
+    </p>
+
+    <p>1. (c) A esfera de cobre irá afundar até assentar no fundo, por ser mais densa que a água, e fará com que um volume de água igual ao seu 
+      transborde. Seja $m$ a massa da esfera, $M$ a massa inicial de água e $V$ o volume da esfera. A massa de água que sai do recipiente é $\rho_{\text{água}} V$.
+    </p>
+
+    <p>
+      A água exerce sobre a esfera uma força de impulsão 
+      $I$ e, portanto, pela terceira lei de Newton, a esfera exerce na água uma força 
+      com a mesma intensidade mas sentido oposto.
+    </p>
+
+    <center><img src = "ex1.png" width = 250/></center>
+
+    <p>
+      Deste modo, a força que a balança exerce na esfera para a suportar é $N_1 = mg - I$ e a que exerce na água é $N_2 = (M - \rho_{\text{água}} V) g + I$. 
+      Logo, a força total que a balança exerce é $N_1 + N_2 = (m+M - \rho_{\text{água}} V) g$ e por isso a balança regista $(m+M - \rho_{\text{água}} V) = 214$ g.
+    </p>
+
+    <p>2. (a) Usando por exemplo a equação $F= ma$, como as unidades têm de ser iguais de ambos os lados<sup>*</sup>, vemos que a unidade SI
+      de força é $\text{kg m s}^{-2}$ (que se costuma abreviar por $N$, Newton). 
+      
+      Assim, a unidade SI da constante gravitacional será
+      $$
+      \text{kg m s}^{-2} \times \frac{\text{m}^2}{\text{kg}^2} = \text{m}^3 \text{ kg}^{-1} \text{ s}^{-2}.
+      $$
+    </p>
+
+    <p><sup>*</sup> Na verdade, os membros da equação não precisam de ter as mesmas unidades. A área de um retângulo é dada
+      pela fórmula $A = c l$. No entanto podemos, por exemplo, expressar o membro esquerdo em $\text{cm}^2$ e o direito em $\text{m cm}$:
+      $1000 \text{ cm}^2 = 1 \text{ m} \times 10 \text{ cm}$. A chave é que ambas as unidades têm a mesma <i>dimensão</i> (referem-se à mesma grandeza): 
+      neste caso área. O mais correto seria então trabalhar com as dimensões de massa, comprimento e tempo ($M$, $L$, $T$, resp.) para chegar 
+      à conclusão que a dimensão de $G$ é $L^3 M^{-1} T^{-2}$ e, portanto, tem unidade $\text{m}^3 \text{ kg}^{-1} \text{ s}^{-2}$ no Sistema Internacional. 
+    </p>
+
+    <p>2. (b) O declive do gráfico é a aceleração gravítica à superfície da lua:
+      $$
+      g_L = \frac{F_g}{m} = \frac{\frac{G M_L m}{R_L^2}}{m} = \frac{G M_L}{R_L^2}.
+      $$
+    </p>
+
+    <p>Do mesmo modo, temos que $g=\frac{G M_T}{R_T^2}$. Assim, a razão entre as massas da Terra e da Lua é
+      $$
+        \frac{M_T}{M_L} = \frac{g R_T^2 / G}{g_L R_L^2 / G} = \frac{g}{g_L} \cdot \left(\frac{R_T}{R_L}\right)^2 = \frac{9.8}{1.62} \cdot 3.66^2 = 81.
+      $$
+    </p>
+
+    <p>3. A intensidade da velocidade dos caracóis é aproximadamente $v = 33 \text{ cm} / 2.33 \text{ min} = 14.1 \text{ cm/min}$.</p>
+
+    <p>Consideremos que o movimento ocorre ao longo do eixo $x$, com origem em $A$ e sentido positivo para $B$ (na posição $x=L$). Denotemos também 
+      as 12h por $t=0$ e as 12h02m por $t_1 = 2 \text{ min}$.
+    </p>
+
+    <p>A posição do caracol Manuel, em função do tempo, é $x_M(t) = v t$ e a posição do caracol Pedro é 
+      $x_P(t)= L - v (t - t_1)$ (note-se que a velocidade escalar é $-v$ e $x_P(t_1)= L$, por isso é esta a equação de movimento).
+    </p>
+
+    <p>Queremos saber o instante $t$ em que
+      $$
+      x_P(t) = x_M(t) \iff vt = L - v (t - t_1) \iff 2v t = L + v t_1 \iff t = \frac{L+vt_1}{2v} = \frac{80 + 14.1 \times 2}{2 \times 14.1} \text{ min}= 38 \text{ min}.
+      $$
+    </p>
+
+    <p>Assim, os caracóis cruzam-se no instante 12h38m.</p>
+
+    <p>4. Como o Sol está muito longe, os raios de luz são aproximadamente paralelos. O ângulo ao centro que separa as duas cidades ($\theta_2$)
+      é $30^\circ - 27.8^\circ = 2.2^\circ$ (ver figura abaixo). Fazendo agora uma regra de 3 simples, podemos descobrir o comprimento do arco PL, que é
+      a distância entre as duas cidades:
+      $$
+      d_{PL} = \frac{2.2}{360} \times 2\pi \times 6370 \text{ km} = 245 \text{ km}.
+      $$
+    </p>
+
+    <center><img src="ex4.png" width=450/></center>
+</body>
