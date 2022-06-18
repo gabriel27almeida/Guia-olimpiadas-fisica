@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Guia para olimpíadas de física</title>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body>
+    <h3>Escalão B - Fase regional 2020</h3>
+
+    <h3>Resolução</h3>
+
+    <p>1. O trabalho da força de atrito é $-Fd$, que corresponde à variação de energia mecânica do bloco. Logo,
+    $$\frac{1}{2}m v_f^2 - \frac{1}{2}m v_i^2 = -Fd \iff v_f^2 = v_i^2 - \frac{2F}{m} d \iff v_f^2 =16\text{ m}^2\text{s}^{-2} - 2\ (\text{m kg}^{-1})\ F.$$
+    </p>
+
+    <p>Porém, se a força de atrito for demasiado intensa, o bloco não conseguirá subir a rampa. A velocidade no topo da rampa é dada novamente pela variação de energia mecânica:
+    $$\frac{1}{2}mv_{\mathrm{topo}}^2 + mg d\sin{30^\circ} - \frac{1}{2}m v_i^2 = - Fd \iff v_{\mathrm{topo}}^2 = v_i^2 - gd - \frac{2Fd}{m}.$$
+    </p>
+
+    <p>Como esta velocidade tem de ser positiva, temos que
+    $$v_i^2 -gd - \frac{2Fd}{m}>0 \iff F < \frac{m}{2d}\left( v_i^2-gd \right) = 3 \text{ N}.$$
+    </p>
+
+    <p>2. O centro de massa do disco descreve uma trajetória circular de raio $R-r$, pelo que a sua velocidade é $v_{\mathrm{CM}}=2\pi (R-r)/T$.</p>
+
+    <p>Como o disco rola sem deslizar, a sua velocidade angular de rotação satisfaz $\omega r = v_{\mathrm{CM}}$. A velocidade de um ponto em relação ao chão é a soma (vetorial) da velocidade do centro de massa com a velocidade do ponto <em>em relação ao centro de massa</em>, logo a velocidade do ponto A é $v_{\mathrm{CM}} + \omega r = 2 v_{\mathrm{CM}} = 4\pi (R-r)/T$.</p>
+
+    <center><img src="ex2.png" width="600" alt="velocidade de um ponto"/></center>
+    <p style="text-align: center">Figura - Velocidade de um ponto $P$ em relação ao chão</p>
