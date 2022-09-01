@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html>  
-  <head>
-    <title>Guia para olimpíadas de física</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  
+<html dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Navigation Menu</title>
+      <!--link rel="stylesheet" href="style.css"-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
   <body>
-    <nav>
-      <label class="logo">Guia olimpíadas</label>
-    </nav>
-
+      <nav>
+         <div class="logo">
+          <span style="color:#f5a425">Olimpíadas</span> Física
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="resolucoes-design/resolucoes.html">Resoluções</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">??</a></li>
+            <li><a href="#">??</a></li>
+         </ul>
+      </nav>
+  
+    <div id="content">
     <h3>O que são as olimpíadas de física?</h3>
     <p>As olimpíadas de física são uma competição destinada a alunos do ensino básico e secundário 
     que põe à prova os seus conhecimentos de física. Podes obter mais informação <a href="https://olimpiadas.spf.pt/" target="blank">aqui</a>.</p>
@@ -40,5 +57,6 @@
       <li><a href="resolucoes/indiceA.html">Resoluções provas - escalão A</a></li>
       <li><a href="resolucoes/indiceB.html">Resoluções provas - escalão B</a></li>
     </ul>
+  </div>
   </body>
 </html>
