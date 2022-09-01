@@ -1,0 +1,20 @@
+body {
+	background-color: rgba(22,34,57,0.85);
+	color: white;
+}
+
+#content {
+  margin: 20px;
+}
+
+a:link {
+  color: #f5a425
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:visited {
+  color: #f5a425
+}

@@ -1,0 +1,48 @@
+body {
+	background-color: rgba(22,34,57,0.85);
+	color: white;
+}
+
+.title {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.table {
+	width: 80%;
+	display: table;
+	text-align: center;
+	border-spacing: 10px;
+	border-collapse: collapse;
+	margin: auto;
+}
+
+.row {
+	display: table-row;
+	border-bottom-style: dashed;
+	line-height: 1.5em;
+	font-size: 18;
+}
+
+.year {
+	width: 33%;
+	display: table-cell;
+	padding: 20px;
+	vertical-align: middle;
+	font-size: 22;
+}
+
+.escalao {
+	width: 33%;
+	display: table-cell;
+	padding: 20px;
+	vertical-align: middle;
+
+}
+
+.reg{
+	padding: 0px 20px 0px 20px;
+}
+.nac{
+	padding: 0px 20px 0px 20px;
+}
