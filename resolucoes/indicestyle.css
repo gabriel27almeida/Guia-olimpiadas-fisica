@@ -46,3 +46,15 @@ body {
 .nac{
 	padding: 0px 20px 0px 20px;
 }
+
+a:link {
+	color: #f5a425;
+}
+
+a:hover {
+	opacity: 0.8;
+}
+
+a:visited {
+	color: #f5a425;
+}

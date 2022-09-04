@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="homestyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Script-->
+    <script type="text/javascript" src="tabscript.js"></script>
   </head>
   <body>
     <nav>
@@ -21,10 +24,9 @@
       </label>
       <ul>
         <li><a class="active" href="#">Home</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
         <li><a href="resolucoes/indice.html">Resoluções</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">??</a></li>
-        <li><a href="#">??</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
     </nav>
 
@@ -44,7 +46,7 @@
     
       <div id="What" class="tab">
         <div class="tab-image">
-          <img src="what.jpeg" width="400" alt="imagem">
+          <img src="images/what.jpeg" width="400" alt="imagem">
         </div>
 
         <div class="tab-text1">
@@ -55,7 +57,7 @@
 
       <div id="Why" class="tab" style="display:none">
         <div class="tab-image">
-          <img src="why.jpeg" width="400" alt="imagem">
+          <img src="images/why.jpeg" width="400" alt="imagem">
         </div>
 
         <div id="tab-text2">
@@ -78,7 +80,7 @@
 
       <div id="How" class="tab" style="display:none">
         <div class="tab-image">
-          <img src="how.jpeg" width="400" alt="imagem">
+          <img src="images/how.jpeg" width="400" alt="imagem">
         </div>
         <div class="tab-text1">
           <p>Aqui podes encontrar vários recursos e dicas para dominares o currículo das olimpíadas, assim como exercícios e
@@ -89,21 +91,34 @@
       </div>
     </div>
 
-<script>
-function openTab(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("tab");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+    <div id="about">
+      <h1>Conhece a equipa</h1>
 
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/GabrielAlmeida.jpg" alt="Gabriel" style="width:100%">
+      <div class="container">
+        <h2>Gabriel Almeida</h2>
+        <p class="title">Fundador</p>
+        <p>Estudante de Engenharia Física e Tecnológica, no IST. Participante de várias olimpíadas, destacando a medalha de prata nas IPhO 2021</p>
+        <!--p>example@example.com</p-->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/unknown_person.jpeg" alt="unknown" style="width:100%">
+      <div class="container">
+        <h2>Queres contribuir?</h2>
+        <p class="title"></p>
+        <p>Entra em contacto ;)</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
   </body>
 </html>
