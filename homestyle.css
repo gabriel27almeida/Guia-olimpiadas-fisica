@@ -1,0 +1,153 @@
+body {
+	background-color: rgba(22,34,57,0.85);
+	color: white;
+}
+
+#content {
+  margin: 20px;
+}
+
+a:link {
+  color: #f5a425
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+a:visited {
+  color: #f5a425
+}
+
+#welcome {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* 
+///////////////////
+//               //
+// TABS SECTION  //
+//               //
+///////////////////
+*/
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    width: 33.3%;
+    text-align: center;
+}
+.mytabs label:hover {
+    background-color: #f5a425;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/tabs-background.jpg");
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #f5a425;
+}
+
+.tab-image{
+  width: 500px;
+  float: left;
+  margin: 50px;
+}
+
+.tab-text1 {
+  padding: 100px;
+  font-size: 22px;
+}
+
+#tab-text2 {
+  padding: 50px;
+  font-size: 20px;
+}
+
+#tab-text2 p {
+  margin-bottom: 20px;
+}
+
+.tab-text1 p {
+  margin-bottom: 20px;
+}
+
+
+
+
+/* 
+///////////////////
+//               //
+// ABOUT SECTION //
+//               //
+///////////////////
+*/
+
+#about{
+  margin: 50px 20px 0px 20px;
+}
+
+.row {
+  margin-top: 50px;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: #f5a425;
+}

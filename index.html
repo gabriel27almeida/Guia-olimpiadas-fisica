@@ -1,44 +1,118 @@
 <!DOCTYPE html>
-<html>  
+<html dir="ltr">
   <head>
-    <title>Guia para olimpíadas de física</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Guia Olimpíadas da Física</title>
+      
+    <!--Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  
   <body>
     <nav>
-      <label class="logo">Guia olimpíadas</label>
+      <div class="logo">
+        <span style="color:#f5a425">Olimpíadas</span> Física
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="resolucoes/indice.html">Resoluções</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
     </nav>
 
-    <h3>O que são as olimpíadas de física?</h3>
-    <p>As olimpíadas de física são uma competição destinada a alunos do ensino básico e secundário 
-    que põe à prova os seus conhecimentos de física. Podes obter mais informação <a href="https://olimpiadas.spf.pt/" target="blank">aqui</a>.</p>
-    
-    <h3>Que oportunidades me dão as olimpíadas de física?</h3>
-    <p>Para além de explorares o fascinante mundo da física e conheceres pessoas tão interessadas como tu, poderás também
-      ter a oportunidade de representar Portugal em provas internacionais.
-    </p>
+    <div id="welcome">
+      <h1>Bem vindo</h1>
 
-    <p>Os melhores classificados do escalão A serão chamados para uma prova de qualificação para representarem Portugal nas 
-      <a href="http://euso.eu/" target="blank">EUSO (European Union Science Olympiad)</a>, uma prova em equipa com elevado carácter experimental que conjuga 
-      física, química e biologia. 
-    </p>
+      <h2>ao</h2>
+      <h1>Guia das Olimpíadas da Física</h1>
+    </div>
 
-    <p>Os 20 melhores classificados do escalão B serão chamados para participar no Quark, onde terão sessões de preparação com 
-      docentes da Universidade de Coimbra. Após a preparação, é feita uma prova de seleção para apurar os alunos que irão representar
-      Portugal nas <a href="https://www.ipho-new.org/" target="blank">IPhO (International Physics Olympiad)</a> e nas 
-      <a href="http://www1.fisica.org.br/~oibf/home/" target="blank">OIbF (Olimpíadas Iberoamericanas de Física)</a>.
-    </p>
+    <div class="mytabs">
+    <input type="radio" id="tabwhat" name="mytabs" checked="checked">
+    <label for="tabwhat">O que são as olimpíadas da física?</label>
+    <div class="tab">
+      <div class="tab-image">
+        <img src="images/what.jpeg" width="400" alt="imagem">
+      </div>
 
-    <h3>Como me posso preparar?</h3>
-    <p>Aqui podes encontrar vários recursos e dicas para dominares o currículo das olimpíadas, assim como exercícios e
-    resoluções de olimpíadas anteriores.</p>
+      <div class="tab-text1">
+        <p>As olimpíadas de física são uma competição destinada a alunos do ensino básico e secundário 
+        que põe à prova os seus conhecimentos de física. Podes obter mais informação na <a href="https://olimpiadas.spf.pt/" target="blank">página oficial</a> das Olimpíadas da Física.</p>
+      </div>
+    </div>
 
-    <ul>
-      <li>Recursos (vídeos, textos, livros)</li>
-      <li>Exercícios</li>
-      <li><a href="resolucoes/indiceA.html">Resoluções provas - escalão A</a></li>
-      <li><a href="resolucoes/indiceB.html">Resoluções provas - escalão B</a></li>
-    </ul>
+    <input type="radio" id="tabwhy" name="mytabs">
+    <label for="tabwhy">Que oportunidades me dão?</label>
+    <div class="tab">
+      <div class="tab-image">
+        <img src="images/why.jpeg" width="400" alt="imagem">
+      </div>
+
+      <div id="tab-text2">
+        <p>Para além de explorares o fascinante mundo da física e conheceres pessoas tão interessadas como tu, poderás também
+        ter a oportunidade de representar Portugal em provas internacionais<sup>*</sup>.</p>
+
+        <p style="font-size:14px"><sup>*</sup>Os melhores classificados do escalão A serão chamados para uma prova de qualificação para representarem Portugal nas 
+        <a href="http://euso.eu/" target="blank">EUSO (European Union Science Olympiad)</a>, uma prova em equipa com elevado carácter experimental que conjuga física, química e biologia.</p>
+
+        <p style="font-size:14px"><sup>*</sup>Os 20 melhores classificados do escalão B serão chamados para participar no Quark, onde terão sessões de preparação com docentes da Universidade de Coimbra. Após a preparação, é feita uma prova de seleção para apurar os alunos que irão representar Portugal nas 
+        <a href="https://www.ipho-new.org/" target="blank">IPhO (International Physics Olympiad)</a> e nas 
+        <a href="http://www1.fisica.org.br/~oibf/home/" target="blank">OIbF (Olimpíadas Iberoamericanas de Física)</a>.
+        </p>
+      </div>
+    </div>
+
+    <input type="radio" id="tabhow" name="mytabs">
+    <label for="tabhow">Como me posso preparar?</label>
+    <div class="tab">
+      <div class="tab-image">
+          <img src="images/how.jpeg" width="400" alt="imagem">
+      </div>
+      <div class="tab-text1">
+        <p>Aqui podes encontrar vários recursos e dicas para dominares o currículo das olimpíadas, assim como exercícios e
+        resoluções de olimpíadas anteriores.</p>
+
+        <p style="color:#f5a425">De que estás à espera para começar? :D</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div id="about">
+      <h1>Conhece a equipa</h1>
+
+      <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/GabrielAlmeida.jpg" alt="Gabriel" style="width:100%">
+      <div class="container">
+        <h2>Gabriel Almeida</h2>
+        <p class="title">Fundador</p>
+        <p>Estudante de Engenharia Física e Tecnológica, no IST. Participante de várias olimpíadas, destacando a medalha de prata nas IPhO 2021</p>
+        <!--p>example@example.com</p-->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/unknown_person.jpeg" alt="unknown" style="width:100%">
+      <div class="container">
+        <h2>Queres contribuir?</h2>
+        <p class="title"></p>
+        <p>Entra em contacto ;)</p>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
   </body>
 </html>
