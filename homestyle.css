@@ -25,35 +25,52 @@ a:visited {
   margin-bottom: 50px;
 }
 
+/* 
+///////////////////
+//               //
+// TABS SECTION  //
+//               //
+///////////////////
+*/
 
-.tab-bar {
-  width: 100%;
-  margin: auto;
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    width: 33.3%;
+    text-align: center;
+}
+.mytabs label:hover {
+    background-color: #f5a425;
 }
 
-.tablink {
-  width:33%;
-  height: 60px;
-  font-size: 22px;
-  border-radius: 5px;
-  border-color: white;
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-image: url("images/tabs-background.jpg");
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
 }
 
-.tablink:hover {
-  background-color: #f5a425;
-  border-color: #f5a425;
-  transition: all 0.3s ease;
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
 }
 
-.active {
-  background-color: #f5a425;
-  border-color: #f5a425;
-}
-
-.tab-zone {
-  background-image: url("images/tabs-background.jpg");
-  background-color: rgba(22,34,57,0.85);
-  height: 450px;
+.mytabs input[type="radio"]:checked + label {
+    background: #f5a425;
 }
 
 .tab-image{
@@ -79,6 +96,17 @@ a:visited {
 .tab-text1 p {
   margin-bottom: 20px;
 }
+
+
+
+
+/* 
+///////////////////
+//               //
+// ABOUT SECTION //
+//               //
+///////////////////
+*/
 
 #about{
   margin: 50px 20px 0px 20px;
