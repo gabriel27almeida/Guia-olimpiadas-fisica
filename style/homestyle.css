@@ -60,6 +60,9 @@ a:visited {
     background-image: url("../images/tabs-background.jpg");
     order: 1;
     display: none;
+
+    text-align: justify;
+    text-justify: inter-word;
 }
 .mytabs .tab h2 {
     font-size: 3em;
@@ -121,6 +124,8 @@ a:visited {
   width: 20%;
   margin-bottom: 16px;
   padding: 0 8px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Display the columns below each other instead of side by side on small screens */

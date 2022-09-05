@@ -19,6 +19,8 @@ a:visited {
 	width: 90%;
 	margin: 10px auto;
 	padding: 20px;
+	text-align: justify;
+   text-justify: inter-word;
 }
 
 .section h1 {
